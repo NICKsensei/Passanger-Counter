@@ -1,17 +1,25 @@
-// Grab the welcome-el paragraph and store it in a variable called welcomeEl
-let welcomeEl = document.getElementById("welcome-el");
+let num1 = 8;
+let num2 = 2;
+document.getElementById("num1-el").textContent = num1;
+document.getElementById("num2-el").textContent = num2;
+let sum = document.getElementById("sum-el");
+// Create four functions: add(), subtract(), divide(), multiply()
+function add() {
+  sum.textContent = "Sum: " + (num1 + num2);
+}
+function subtract() {
+  sum.textContent = "Sum: " + (num1 - num2);
+}
+function divide() {
+  sum.textContent = "Sum: " + num1 / num2;
+}
+function multiply() {
+  sum.textContent = "Sum: " + num1 * num2;
+}
 
-// Create two variables (name & greeting) that contains your name
-let userName = "Refat Alam";
+// Call the correct function when the user clicks on one of the buttons
+// Perform the given calculation using num1 and num2
+// Render the result of the calculation in the paragraph with id="sum-el"
 
-// and the greeting we want to render on the page
-let greeting = "Hey, Welocme Back ";
-// Render the welcome message using welcomeEl.innerText
-welcomeEl.innerText = greeting + userName;
-
-// Add an emoji to the end! 👋
-// WRITE YOUR CODE BELOW HERE
-// HINT: count = count + 1
-welcomeEl.innerText += " 👋";
-
-console.log(past(25, 1, 1));
+// E.g. if the user clicks on the "Plus" button, you should render
+// "Sum: 10" (since 8 + 2 = 10) inside the paragraph with id="sum-el"
